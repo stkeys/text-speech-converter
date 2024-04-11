@@ -1,0 +1,128 @@
+ /* =  b  n   *   () B N  */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #010758, #250615);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.hero h1{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.hero h1 span {
+  color: #ff2963;
+}
+
+textarea {
+  width: 600px;
+  height: 250px;
+  background: #4d4d7c;
+  color: #fff;
+  font-size: 15px;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+textarea::placeholder {
+  font-size: 16px;
+  color: #ddd
+}
+
+
+button {
+  background: #ff2963;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button .ion-icon {
+  width: 16px;
+  margin-right: 10px;
+}
+
+
+
+/* Media query--------------------------------------------------------------------------------- */
+
+/* 800 pixels ------------------------------------------------------------------ */
+
+@media (max-width: 800px) {
+  textarea{
+    width: 500px;
+  }
+
+  .row {
+    width: 500px;
+  }
+}
+
+/* 600 pixels --------------------------------------------------------------- */
+
+
+@media (max-width: 600px) {
+  textarea{
+    width: 400px;
+  }
+  .row {
+    width: 400px;
+  }
+  .hero {
+  background: linear-gradient(45deg, #400f77, #250615);
+
+  }
+  .hero h1 span {
+    color: #4d4d7c;
+  }
+  button {
+    background-color: #4d4d7c;
+  }
+  }
+
+/* 480px ----------------------------------------------------------------------- */
+  @media (max-width: 480px) {
+  textarea{
+    width: 300px;
+  }
+  .hero h1{
+    font-size: 1.5rem;
+  }
+}
+
+/* 350px ------------------------------------------------- */
+@media (max-width: 480px) {
+  textarea{
+    width: 200px;
+  }
+}
